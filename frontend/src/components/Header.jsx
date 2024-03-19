@@ -18,14 +18,16 @@ const Header = () => {
         //     </Navbar>
         // </div>
 
-        <Navbar className="border-b-4 sticky top-0 z-50 text-white bg-purple-700">
-            <NavLink to="/" className={({ isActive }) => (isActive ? "text-cyan-300 font-semibold" : "")}>
-                Submissions
-            </NavLink>
+        <Navbar className="border-b-1 sticky top-0 z-50 text-white  bg-purple-700">
+            <div className="w-full flex items-center justify-around gap-5">
+                <NavLink to="/" className={({ isActive }) => (isActive ? "text-cyan-300 font-semibold" : "")}>
+                    Submissions
+                </NavLink>
 
-            <NavLink to="/create-submission" className={({ isActive }) => (isActive ? "text-cyan-300 font-semibold" : "")}>
-                Create a submission
-            </NavLink>
+                <NavLink to="/create-submission" className={({ isActive }) => (isActive ? "text-cyan-300 font-semibold" : "")}>
+                    Create a submission
+                </NavLink>
+            </div>
         </Navbar>
     );
 };
