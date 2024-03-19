@@ -1,6 +1,6 @@
 import Redis from "ioredis";
 
-export const redisSetUp = () => {
+const redisSetUp = () => {
     try {
         const redis = new Redis(process.env.REDIS_URI, {
             tls: true,
